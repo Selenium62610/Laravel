@@ -8,8 +8,8 @@ class Contact extends Model
 {
     //
 		
-        protected $table = 'contact';
-        public $timestamps = false;
+        protected $table = 'contact'; //Nom de la table concerné par cette classe
+        public $timestamps = false; //Désactive la gestion des colonnes created_at et updated_at
 }
 
 

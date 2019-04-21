@@ -10,13 +10,6 @@
         @section('content')
         <h1>Toast</h1>
 
-        <ul>
-			@foreach ( $posts as $post )
-
-  				<li>{{ $post->post_title }}</li>
-
-			@endforeach
-		</ul>
 
         @endsection
 
