@@ -8,15 +8,14 @@
 
         @extends('layouts/main')
         @section('content')
-        <h1>zfzf</h1>
+        <h1>rgergerg</h1>
         
         <ul>
-@foreach ( $posts as $post )
+			@foreach ( $posts as $post )
+  				<li> <a href="contact/{{$post->post_name}}">{{ $post->post_name }} </a></li> 
 
-  <li>{{ $post->post_title }}</li>
-
-@endforeach
-</ul>
+			@endforeach
+		</ul>
 
         @endsection
 

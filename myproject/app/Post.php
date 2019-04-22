@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     //La table associé au model
-    protected $table ='posts';    
+    protected $table ='posts';	    
 
    /**
     * Get the user that authored the post.

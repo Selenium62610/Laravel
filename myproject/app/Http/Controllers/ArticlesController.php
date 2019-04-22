@@ -9,5 +9,6 @@ class ArticlesController extends Controller
 	function index()
 	{
 		return view('articles');
-	}
+	}	
+
 }
