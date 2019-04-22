@@ -16,13 +16,10 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function index()
+    public function index() //Retourne la vue principal
     {
-        return view('home');
+
+        return view('welcome'); //Welcomme étant passé dans le return, Laravel cherchera un fichier ‘welcome.blade.php’ ou ‘welcome.php’ dans resources/views.
     }
+
 }

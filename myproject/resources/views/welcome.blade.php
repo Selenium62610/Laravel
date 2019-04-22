@@ -9,8 +9,7 @@
         @extends('layouts/main')
         @section('content')
         <h1>Toast</h1>
-
-
+        
         @endsection
 
     </body>

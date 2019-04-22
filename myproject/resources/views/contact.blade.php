@@ -8,7 +8,16 @@
 
         @extends('layouts/main')
         @section('content')
-        <h1>AHAHAHAHHAH</h1>
+        <h1>zfzf</h1>
+        
+        <ul>
+@foreach ( $posts as $post )
+
+  <li>{{ $post->post_title }}</li>
+
+@endforeach
+</ul>
+
         @endsection
 
     </body>

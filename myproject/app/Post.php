@@ -6,15 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    //
+    //La table associé au model
+    protected $table ='posts';    
 
-    protected $table = 'posts';
-
-    public function author()
+   /**
+    * Get the user that authored the post.
+    */
+   public function author()
    {
+
        return $this->belongsTo('App\User','post_author');
    }
+
+
 }
-
-
-
