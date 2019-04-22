@@ -8,7 +8,7 @@
 
         @extends('layouts/main')
         @section('content')
-        <h1>Merde</h1>
+        <h1>La pages des contact</h1>
         @endsection
 
     </body>

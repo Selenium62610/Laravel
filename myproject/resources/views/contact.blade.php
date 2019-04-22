@@ -8,7 +8,7 @@
 
         @extends('layouts/main')
         @section('content')
-        <h1>rgergerg</h1>
+        <h1>La page des contacts ou l'on retrouve les 3 derniers post de la base de données (j'ai tout mit ici j'avais pas fait attention au nom donné dans le sujet) </h1>
         
         <ul>
 			@foreach ( $posts as $post )

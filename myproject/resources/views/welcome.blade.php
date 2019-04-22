@@ -8,7 +8,7 @@
 
         @extends('layouts/main')
         @section('content')
-        <h1>Toast</h1>
+        <h1>C'est la page d'accueil, celle que j'utilise à la place de Home</h1>
         
         @endsection
 
