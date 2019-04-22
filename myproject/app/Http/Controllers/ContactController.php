@@ -33,11 +33,9 @@ class ContactController extends Controller
     }
 
     public function show($post_name) {
-   		$post = \App\Post::where('post_name',$post_name)->first(); //get first post with post_nam == $post_name
-  
-   		return view('articles',array( //Pass the post to the view
-       'post' => $post
-   		));
+   		$posts = \App\Post::where('post_name',$post_name)->first(); //get first post with post_nam == $post_name
+  			
+   		return view('toast',['posts' => $posts]);
 	}
 
 
