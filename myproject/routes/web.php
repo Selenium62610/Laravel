@@ -23,7 +23,7 @@ Route::get('articles', 'ArticlesController@index');
 
 Route::get('contact', 'ContactController@index');
 
-
+//Les redirects permettent de revenir sur les pages articles, contact et le menu même après avoir appuyé sur l'un des postes
 
 Route::get('contact/articles', function()
 {
@@ -55,3 +55,17 @@ Route::get('/', function()
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/contact/{post_name}', 'ContactController@show');
+
+//Permet de récupérer le contenu des formulaires créé sur la page articles
+Route::get('/articles', function () {
+    return view('articles');
+});
+
+Route::post('/articles', function () {
+
+	$commentaire = new App\Articles;
+	$commentaire->contenu = request('contenu');
+	$commentaire->save();
+	return view('articles');
+    //return 'Votre email est ' . $_POST['contenu'];
+});

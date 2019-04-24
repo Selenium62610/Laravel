@@ -9,4 +9,5 @@ class Contact extends Model
     //La table associé au model
     protected $table ='posts';
     public $timestamps = false;
+    
 }

@@ -6,10 +6,21 @@
 
         <title>Laravel</title>
 
+    </head>
+
         @extends('layouts/main')
         @section('content')
-        <h1>La pages des contact</h1>
+        <h1>La pages des articles</h1>
+
+        <p> {{$users->name}} </p>
+
+        <form action="/articles" method="post">
+        	 {{ csrf_field() }}
+        <input type="string" name="contenu" placeholder="Commentaire">
+        <input type="submit" value="M'inscrire">
+    </form>
         @endsection
 
     </body>
+</html>
 </html>
