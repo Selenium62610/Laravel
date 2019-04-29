@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+// Article et contact on été inversé
 class ContactController extends Controller
-{
+{   //Ceci est le controleur d'ARTICLE
 	public function index(){
 
 		//$post = \App\Post::find(1); //trouver le post avec l’id 1

@@ -8,8 +8,8 @@
 
         @extends('layouts/main')
         @section('content')
-        <h1>La page des contacts ou l'on retrouve les 3 derniers post de la base de données (j'ai tout mit ici j'avais pas fait attention au nom donné dans le sujet) </h1>
-        
+        <h1>La page des Articles ou l'on retrouve les 3 derniers post de la base de données </h1>
+        <!-- // Article et contact on été inversé-->
         <ul>
 			@foreach ( $posts as $post )
   				<li> <a href="contact/{{$post->post_name}}">{{ $post->post_name }} </a></li> 

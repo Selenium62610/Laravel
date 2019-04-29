@@ -8,8 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Articles extends Model
 {
     //La table associé au model
+    // Article et contact on été inversé
 
-    protected $table ='articles';
+    protected $table ='articles2';
     public $timestamps = false;
 
 }

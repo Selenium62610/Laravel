@@ -63,6 +63,9 @@ Route::get('/contact/{post_name}', 'ContactController@show');
 Route::post('/articles', function () {
 
 	$commentaire = new App\Articles;
+    $commentaire->nom = request('nom');
+    $commentaire->prenom = request('prenom');
+    $commentaire->email = request('email');
 	$commentaire->contenu = request('contenu');
 	$commentaire->save();
     return Redirect::to('articles');

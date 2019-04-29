@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     //La table associé au model
+    //les articles
     protected $table ='posts';	    
 
    /**
