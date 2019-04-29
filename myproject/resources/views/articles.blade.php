@@ -18,11 +18,15 @@
                  {{ csrf_field() }}
             <input type="string" name="contenu" placeholder="Commentaire">
             <input type="submit" value="Ajouter">
-
-
         </form>
 
 
+        @if(!empty($articles))
+            @foreach ( $articles as $article )
+                <li> <a href="articles/{{$article->contenu}}">{{ $article->contenu }} </a></li>
+
+                @endforeach
+        @endif
         @endsection
 
     </body>

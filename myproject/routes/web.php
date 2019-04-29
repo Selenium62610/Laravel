@@ -54,18 +54,18 @@ Route::get('/', function()
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('articles', 'ArticlesController@index');
+
+Route::get('/articles/{contenu}', 'ArticlesController@show');
 Route::get('/contact/{post_name}', 'ContactController@show');
 
-//Permet de récupérer le contenu des formulaires créé sur la page articles
-Route::get('/articles', function () {
-    return view('articles');
-});
 
 Route::post('/articles', function () {
 
 	$commentaire = new App\Articles;
 	$commentaire->contenu = request('contenu');
 	$commentaire->save();
-	return view('articles');
+    return Redirect::to('articles');
     //return 'Votre email est ' . $_POST['contenu'];
 });
+
