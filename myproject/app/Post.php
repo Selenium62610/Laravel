@@ -14,7 +14,8 @@ class Post extends Model
     */
    public function author()
    {
-
+       //retourne le post appartenant à l'utilisateur pour cela nous utilisons la clé étrangère post_author
+       //Eloquent traduit cela à quels users sont en relation avec ce post
        return $this->belongsTo('App\User','post_author');
    }
 

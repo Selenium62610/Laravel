@@ -12,8 +12,8 @@
 <div class="top-bar-left">
 <ul class="menu">
 <li><a href="menu">Home</a></li>
-<li><a href="articles">Contact</a></li>
-<li><a href="contact">Articles</a></li>
+<li><a href="articles">Articles</a></li>
+<li><a href="contact">Contact</a></li>
 </ul>
 </div>
 </div>

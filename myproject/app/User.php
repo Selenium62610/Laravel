@@ -43,6 +43,7 @@ class User extends Authenticatable
     */
    public function posts()
    {
+       //Relation avec Eloquent permet d'attribuer des posts à notre utilisateur. La liaison est effectué par la clé étrangère 'post_author'
        return $this->hasMany('App\Post', 'post_author');
    }
 

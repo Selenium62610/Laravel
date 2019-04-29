@@ -12,13 +12,17 @@
         @section('content')
         <h1>La pages des articles</h1>
 
-        <p> {{$users->name}} </p>
+        <p> </p>
 
         <form action="/articles" method="post">
-        	 {{ csrf_field() }}
-        <input type="string" name="contenu" placeholder="Commentaire">
-        <input type="submit" value="M'inscrire">
-    </form>
+                 {{ csrf_field() }}
+            <input type="string" name="contenu" placeholder="Commentaire">
+            <input type="submit" value="Ajouter">
+
+
+        </form>
+
+
         @endsection
 
     </body>

@@ -13,6 +13,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
+        //fonction executée entre l'appel de la route et l'execution, ce dernier permet de n'autoriser l'accès à la page home
+        //uniquement pour l'utilisateur authentifier
         $this->middleware('auth');
     }
 

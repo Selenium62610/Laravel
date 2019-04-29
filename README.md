@@ -10,3 +10,16 @@ Vous arriverez ensuite sur la page http://localhost:8000/home , c'est la page d'
 Dans la page contact (http://localhost:8000/articles) vous pourrez déposer des commentaires qui seront eux aussi stoké dans la BDD dans la table articles
 
 Dans la page article (http://localhost:8000/contact) vous aurez accès aux trois derniers posts comme demandé dans le sujet, si vous cliqué sur l'un des liens vous serez diriger vers la page de ce post ou vous pourrez vous plus d'information sur ce post (son contenu et son auteur, dans un style minimaliste) par exemple si vous cliquez sur saepe vous aurez accès à la page http://localhost:8000/contact/saepe, si vous recliquez sur l'une des autres pages vous revenez sur la page concerné.
+
+En cas de problème avec gitIgnore : 
+
+Suivre les étapes suivantes :
+
+- créer le fichier database.sqlite dans le dossier database
+- modifier l'env.example en .env puis remettre les settings pour sqlite 
+- se mettre a la racine du projet
+- faire un composer install
+- php artisan key:generate
+- php artisan migrate
+- php artisan db:seed
+- php artisan serve
